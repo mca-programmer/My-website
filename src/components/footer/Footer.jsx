@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h5 className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-3">
-              Md Musarraf Hosen
+              MCA Musarraf Hosen
             </h5>
             <p className="text-sm text-gray-400 leading-relaxed">
               MERN-Stack Web Developer specializing in creating modern,

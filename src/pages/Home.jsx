@@ -13,6 +13,15 @@ const projects = [
     image: "/Image/tickfest.png",
   },
   {
+    title: "AI MindPulse",
+    url: " https://ai-mindpulse.web.app/",
+    type: "Personal Project",
+    tech: "Full Stack",
+    description: "AI MindPulse – an AI-driven system designed to deliver smart insights and automated solutions",
+    image:
+      "/public/Image/ai_mindmosel.png",
+  },
+  {
     title: "GROKAI",
     url: "https://www.grokaiworld.com/",
     type: "Client Project",
@@ -47,13 +56,13 @@ const projects = [
     image: "/Image/travelvista.png",
   },
   {
-    title: "Smart Ticketing System",
-    url: "https://ashik70021.github.io/smart-ticketing-website/",
-    type: "Personal Project",
-    tech: "Frontend",
+    title: "BD Shop",
+    url: "https://bd-shop-frontend.vercel.app/",
+    type: "Personal Project ",
+    tech: "Full Stack with Auth",
     description:
-      "Interactive ticket booking system with seat selection and real-time pricing",
-    image: "/Image/ticket.png",
+      "A complete full-stack e-commerce application built with Next.js (App Router) on the frontend and Express.js + MongoDB on the backend",
+    image: "/public/Image/bdshop.png",
   },
 ];
 
@@ -62,6 +71,7 @@ const skills = {
     "HTML",
     "CSS",
     "Tailwind CSS",
+    "bootstrap 5",
     "JavaScript",
     "React",
     "DaisyUI",
