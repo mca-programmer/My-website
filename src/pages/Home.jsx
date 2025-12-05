@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import heroImage from "../assets/mca_hero.png";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
+import { Typewriter } from "react-simple-typewriter";
 
 const projects = [
   {
@@ -17,9 +19,9 @@ const projects = [
     url: " https://ai-mindpulse.web.app/",
     type: "Personal Project",
     tech: "Full Stack",
-    description: "AI MindPulse – an AI-driven system designed to deliver smart insights and automated solutions",
-    image:
-      "/public/Image/ai_mindmosel.png",
+    description:
+      "AI MindPulse – an AI-driven system designed to deliver smart insights and automated solutions",
+    image: "/public/Image/ai_mindmosel.png",
   },
   {
     title: "GROKAI",
@@ -185,7 +187,8 @@ const Home = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              Hi, I&apos;m Md Musarraf Hosen
+              Hi, I&apos;m <br />{" "}
+              <span className="text-purple-200">Musarraf Hosen</span>
             </motion.h1>
 
             <motion.h2
@@ -194,7 +197,19 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.7 }}
             >
-              MERN Stack Web Developer
+              <Typewriter
+                words={[
+                  "MERN Stack Web Developer",
+                  "Frontend Developer",
+                  "Backend Enthusiast",
+                ]}
+                loop={0} // 0 = infinite loop
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </motion.h2>
 
             <motion.p
@@ -205,11 +220,11 @@ const Home = () => {
             >
               I am a determined MERN Stack Developer who enjoys creating
               attractive and user-friendly web applications. I have strong
-              skills in HTML, CSS, Tailwind CSS, JavaScript, TypeScript, and
-              Angular. I confidently work with Node.js, Express.js, MongoDB, and
-              build secure, scalable backend systems. I am good at understanding
-              client needs and turning their ideas into effective,
-              production-ready solutions.
+              skills in HTML, CSS, Tailwind CSS, JavaScript, and React, using
+              React Router for smooth and dynamic navigation. I confidently work
+              with Node.js, Express.js, MongoDB, and build secure, scalable
+              backend systems. I am good at understanding client needs and
+              turning their ideas into effective, production-ready solutions.
             </motion.p>
 
             <motion.div
@@ -463,46 +478,7 @@ const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Featured Projects
-        </h2>
-        <p className="text-center text-gray-400 mb-12">
-          Client & Personal Projects
-        </p>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projects.map((p, i) => (
-            <motion.a
-              key={p.title}
-              href={p.url}
-              target="_blank"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.15 }}
-              className="block bg-gray-800/40 backdrop-blur-xl border border-gray-700 rounded-xl overflow-hidden hover:-translate-y-2 hover:border-indigo-500 transition shadow-lg"
-            >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={p.image}
-                  className="w-full h-full object-cover hover:scale-110 transition duration-700"
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-indigo-400">
-                  {p.title}
-                </h3>
-                <p className="text-gray-400 text-sm">
-                  {p.type} • {p.tech}
-                </p>
-                <p className="text-gray-300 mt-3">{p.description}</p>
-              </div>
-            </motion.a>
-          ))}
-        </div>
-      </section>
-
+      <ProjectsSection projects={projects} />
       {/* Experience Section */}
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
