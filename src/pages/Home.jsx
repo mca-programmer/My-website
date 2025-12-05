@@ -21,7 +21,7 @@ const projects = [
     tech: "Full Stack",
     description:
       "AI MindPulse – an AI-driven system designed to deliver smart insights and automated solutions",
-    image: "/public/Image/ai_mindmosel.png",
+    image: "/Image/ai_mindmosel.png",
   },
   {
     title: "GROKAI",
@@ -64,7 +64,7 @@ const projects = [
     tech: "Full Stack with Auth",
     description:
       "A complete full-stack e-commerce application built with Next.js (App Router) on the frontend and Express.js + MongoDB on the backend",
-    image: "/public/Image/bdshop.png",
+    image: "/Image/bdshop.png",
   },
 ];
 
