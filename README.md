@@ -34,25 +34,7 @@ You can view the live version of the website here:
 - HTML & CSS (or Tailwind CSS / other CSS framework) ✅  
 - Optional: Firebase (for hosting / backend/authentication)  
 
-## Installation & Setup  
+## ======== Thanks for viewing =========
 
-> These steps are for development / local environment  
 
-```bash
-# 1. Clone the repository  
-git clone https://github.com/mca-programmer/My-website.git  
 
-# 2. Navigate into project directory  
-cd My-website  
-
-# 3. Install dependencies  
-npm install  
-
-# 4. Start development server  
-npm run dev  
-
-# 5. Build for production  
-npm run build  
-
-# 6. Deploy (optional)  
-# e.g. using Firebase / your preferred hosting service  
